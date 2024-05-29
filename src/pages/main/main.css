@@ -1,10 +1,14 @@
-.main__layout{
-  width: 100%;
-  display: flex;
+.main__layout {
+    width: 100%;
+    display: flex;
 }
-.main__content{
-  padding:0 20px;
+.main__content {
+    padding: 0 20px;
 }
-.main__left{
-  width: 100%;
+.main__left {
+    width: 100%;
+    background-image: url(../../assets/img/chess.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

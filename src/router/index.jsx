@@ -1,4 +1,4 @@
- import {
+import {
     Route,
     RouterProvider,
     createBrowserRouter,
@@ -13,6 +13,7 @@ import Main from "../pages/main/main";
 import Brand from "../pages/brand/brand";
 import Users from "../pages/users/users";
 import Posts from "../pages/posts/posts";
+import Logout from "../pages/logout/logout";
 
 const Index = () => {
     const router = createBrowserRouter(
@@ -20,13 +21,15 @@ const Index = () => {
             <Route path="/" element={<App />}>
                 <Route index element={<Login />} />
                 <Route path="main/*" element={<Main />}>
-                    <Route index element={<Cars />} />
+                    
+                    <Route  path="cars" element={<Cars />} />
                     <Route path="single-car/" element={<SingleCar />} />
                     <Route path="brand" element={<Brand />} />
                     <Route path="posts" element={<Posts />} />
                     <Route path="users" element={<Users />} />
+                    <Route path="logout" element={<Logout />} />
                 </Route>
-            </Route>
+            </Route>    
         )
     );
     return <RouterProvider router={router} />;

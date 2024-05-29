@@ -4,14 +4,20 @@ import "./sidebar.css";
 const Sidebar = () => {
     const navigate = useNavigate();
     const location = useLocation();
+
+    const logOut = () => {
+        localStorage.clear();
+        navigate("/");
+    };
+
     return (
         <div className="sidebar">
             <h1>Dashboard</h1>
             <NavLink
-                to="/main"
+                to="/main/cars"
                 className={
                     "navLink " +
-                    (location.pathname === "/main" ? "active" : "")
+                    (location.pathname === "/main/cars" ? "active" : "")
                 }>
                 Cars
             </NavLink>
@@ -38,6 +44,18 @@ const Sidebar = () => {
                     (location.pathname === "/main/users" ? "active" : "")
                 }>
                 Users
+            </NavLink>
+            <NavLink
+                to="/"
+                onClick={logOut}
+                className={
+                    "navLink " +
+                    (location.pathname === "/logout" ? "active" : "")
+                }>
+                <span className="span">
+                    Logout
+                    <i className="fa-solid fa-right-from-bracket"></i>
+                </span>
             </NavLink>
         </div>
     );

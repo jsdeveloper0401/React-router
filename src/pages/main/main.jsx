@@ -10,6 +10,7 @@ const Main = () => {
                 <div className="main__left">
                     <Header />
                     <main className="main__content">
+                        <h1 className="text-center text-bold m-5">Cars tables</h1>
                         <Outlet />
                     </main>
                 </div>

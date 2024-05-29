@@ -4,9 +4,9 @@ const App = () => {
     return (
         <>
             <main>
+            
                 <Outlet />
             </main>
-            <footer>{/* <p>Footer content</p> */}</footer>
         </>
     );
 };

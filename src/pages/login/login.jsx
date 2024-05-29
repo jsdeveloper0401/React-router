@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
@@ -21,6 +22,7 @@ const Login = () => {
         }
         setForm({ username: "", password: "" });
     };
+
     return (
         <section className="Login">
             <div className="container">
@@ -63,7 +65,7 @@ const Login = () => {
                 </div>
             </div>
         </section>
-                );
+    );
 };
 
 export default Login;

@@ -25,3 +25,11 @@
     color: black;
     font-weight: bold;
 }
+.span{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.span i{
+    font-size: 16px;
+}
