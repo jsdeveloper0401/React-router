@@ -1,0 +1,10 @@
+.main__layout{
+  width: 100%;
+  display: flex;
+}
+.main__content{
+  padding:0 20px;
+}
+.main__left{
+  width: 100%;
+}

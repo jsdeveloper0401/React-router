@@ -1,0 +1,42 @@
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #ffcccc;
+    }
+    50% {
+        background-color: #ccffcc;
+    }
+    100% {
+        background-color: #ccccff;
+    }
+}
+
+@keyframes colorAnimation {
+    0% {
+        color: #000;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #f00;
+    }
+}
+
+.card {
+    max-width: 400px;
+    margin: 150px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+.Login {
+    background-image: url("https://picsum.photos/400/200");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: colorAnimation 5s infinite alternate;
+}

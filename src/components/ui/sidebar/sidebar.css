@@ -1,0 +1,30 @@
+
+
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    background: #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.navLink {
+    border: 1px solid orange;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.navLink:hover {
+    background-color: rgb(235, 149, 36);
+    color: black;
+}
+
+.navLink.active {
+    background-color: rgb(235, 149, 36);
+    color: black;
+    font-weight: bold;
+}
+
