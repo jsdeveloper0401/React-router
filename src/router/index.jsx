@@ -1,4 +1,4 @@
-import {
+ import {
     Route,
     RouterProvider,
     createBrowserRouter,
@@ -11,6 +11,8 @@ import Cars from "../pages/cars/cars";
 import SingleCar from "../components/single-car/single-car";
 import Main from "../pages/main/main";
 import Brand from "../pages/brand/brand";
+import Users from "../pages/users/users";
+import Posts from "../pages/posts/posts";
 
 const Index = () => {
     const router = createBrowserRouter(
@@ -21,6 +23,8 @@ const Index = () => {
                     <Route index element={<Cars />} />
                     <Route path="single-car/" element={<SingleCar />} />
                     <Route path="brand" element={<Brand />} />
+                    <Route path="posts" element={<Posts />} />
+                    <Route path="users" element={<Users />} />
                 </Route>
             </Route>
         )

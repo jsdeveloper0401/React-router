@@ -27,7 +27,7 @@ const Login = () => {
                 <div className="row">
                     <div className="col-md-6 offset-3 mt-5 responsive">
                         <form id="form" onSubmit={handleSubmit}>
-                            <div className="card">
+                            <div className="card card1">
                                 <div className="card-header">
                                     <h1 className="text-center">Tizimga kirish</h1>
                                 </div>

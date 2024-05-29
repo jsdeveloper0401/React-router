@@ -1,5 +1,3 @@
-
-
 .sidebar {
     width: 25%;
     height: 100vh;
@@ -22,9 +20,8 @@
     color: black;
 }
 
-.navLink.active {
+.active {
     background-color: rgb(235, 149, 36);
     color: black;
     font-weight: bold;
 }
-
