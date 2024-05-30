@@ -14,6 +14,14 @@ const Cars = () => {
             price: "$10000",
             year: "2020-02-02",
         },
+        {
+            id: nanoid(),
+            name: "Mercedes CLA 5",
+            brand: "Mercedes Benz",
+            color: "Black",
+            price: "$18000",
+            year: "2023-03-02",
+        },
     ]);
     const [modal, setModal] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
